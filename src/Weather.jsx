@@ -30,8 +30,20 @@ const Weather = () => {
     }
 
     function getWeatherIcon(iconCode) {
-        return `https://raw.githubusercontent.com/kleon-web-dev/weather-icons/main/${iconCode}.png`;
+        const base = "https://raw.githubusercontent.com/kleon-web-dev/weather-icons/main/";
+    
+        const iconReplacements = {
+            "03n": "03d",
+            "04n": "04d",
+            "09n": "09d",
+            "11n": "11d",
+            "13n": "13d",
+            "50n": "50d"
+        };
+    
+        return `${base}${iconReplacements[iconCode] || iconCode}.png`;
     }
+    
 
     return (
         <div className='weather-container'>

@@ -126,7 +126,13 @@ body {
 .clear-time, .clear-alarm {
   background: rgb(0, 102, 255);
 }
-.start-time:hover, .clear-time:hover, .stop-time:hover {
+.start-time:hover, 
+.clear-time:hover, 
+.stop-time:hover,
+.search-button-container button:hover,
+.start-alarm:hover,
+.clear-alarm:hover
+ {
   filter: brightness(50%);
 }
 .alarm-container {
@@ -138,7 +144,7 @@ align-items: center;
   flex-direction: column;
   display: flex;
   border-radius: 15px;
-
+  box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.35);
 }
 .alarm-time {
   font-size: 2.3rem;
