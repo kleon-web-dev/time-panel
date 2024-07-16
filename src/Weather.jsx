@@ -30,7 +30,7 @@ const Weather = () => {
     }
 
     function getWeatherIcon(iconCode) {
-        return `/icons/png/${iconCode}.png`;
+        return `public/icons/png/${iconCode}.png`;
     }
 
     return (
