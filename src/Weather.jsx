@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Weather = () => {
     const [city, setCity] = useState("Ragusa, IT"); 
     const [weather, setWeather] = useState({});
-
+// updated api key
     const api = {
         key: import.meta.env.VITE_OPENWEATHER_API_KEY,
         base: "https://api.openweathermap.org/data/2.5/"
