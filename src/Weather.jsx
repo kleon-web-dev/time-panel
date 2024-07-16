@@ -5,7 +5,7 @@ const Weather = () => {
     const [weather, setWeather] = useState({});
 
     const api = {
-        key: "apikey",
+        key: import.meta.env.VITE_API_KEY,
         base: "https://api.openweathermap.org/data/2.5/"
     }
 
