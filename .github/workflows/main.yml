@@ -51,4 +51,4 @@ jobs:
           publish_dir: ./dist
 
 env: 
-  VITE_API_KEY: ${{secrets.VITE_OPENWEATHER_API_KEY}}
+  VITE_OPENWEATHER_API_KEY: ${{ secrets.VITE_OPENWEATHER_API_KEY }}
